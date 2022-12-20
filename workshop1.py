@@ -1,10 +1,11 @@
 # Seçeceğiniz bir web sitesine giriş yapmak için gerekli, 
-# hatalı giriş ve doğru giriş olrak iki farklı senaryoyu test eden selenium kodları
+# hatalı giriş ve doğru giriş olrak iki farklı senaryoyu test eden selenium kodlar
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from time import sleep
 
+# Başarılı Senaryo
 driver = webdriver.Chrome()
 driver.get("https://tr.pinterest.com/")
 driver.maximize_window()
@@ -34,6 +35,7 @@ else:
 
 driver.close()
 
+# Başarısız Senaryo
 driver = webdriver.Chrome()
 driver.get("https://tr.pinterest.com/")
 driver.maximize_window()
